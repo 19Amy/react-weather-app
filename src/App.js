@@ -1,5 +1,6 @@
 
 import './App.css';
+import Weather from './Weather';
 import Button from 'react-bootstrap/Button';
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
     <div className="App">
       <div className='container'>
 
-        <h1>Weather App</h1>
+        
+        <Weather/>
         <footer>
            This project was coded by Amy Gathoni and is {' '}
         
