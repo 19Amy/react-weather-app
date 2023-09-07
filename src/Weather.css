@@ -8,6 +8,7 @@
 }
 .Weather h1{
     
+    margin: 0;
     font-size: 24px;
     font-weight: 100;
     line-height: 29px;
@@ -33,12 +34,12 @@ form{
 
 }
 .weather-img{
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     display: inline;
     margin: 0;
     padding: 0px;
-    margin-right: 2px;
+    margin-right: 0px;
     margin-left: 2px;
     
 }
@@ -52,7 +53,7 @@ form{
 .Weather .temperature{
     font-weight: bold;
     color: grey;
-    font-size: 47px;
+    font-size: 43px;
     font-weight: 400;
     margin-left: 0px;
     
@@ -62,4 +63,11 @@ form{
     font-weight: bold;
     position: relative;
     top: -32px;
+    text-align: right;
+}
+.units-section{
+    padding: 0;
+}
+.weather-details{
+    text-align: right;
 }
