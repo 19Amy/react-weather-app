@@ -7,11 +7,12 @@ import "./Weather.css";
 export default function Weather(props){
     
     const [weatherData, setWeatherdata] = useState ( {ready: false});
+    const [city,setCity] = useState(props.defaultCity);
 
 
     function handleResponse(response){
         
-        console.log(response.data);
+        
         setWeatherdata({
           ready:true,
           temperature:response.data.main.temp,
@@ -25,16 +26,33 @@ export default function Weather(props){
         
         
     }
+   //Search Engine function
+   function search(){
+         //GET API KEY AND URL
+      const apiKey ="ab7ad46dea06f3628a7e54b90f1e4bb5";
+      
+      let apiUrl =`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+      axios.get(apiUrl).then(handleResponse);
+   }
+    function handleSubmit(event){
+        event.preventDefault();
+        //search for a city
+       search()
+    }
+
+    function handleCityChange(event){
+      setCity(event.target.value)
+    }
 
     if(weatherData.ready){
                 //HTML
         return(
      <div className="Weather">
         
-        <form>
+        <form onSubmit={handleSubmit}>
             <div className="row">
                  <div className="col-md-9">
-                   <input type="search" placeholder="Enter a city" className="form-control"/>
+                   <input type="search" placeholder="Enter a city" className="form-control" onChange={handleCityChange}/>
                  </div>
                  <div className="col-md-3">
                     <input type="submit" value="Search" className="btn btn-primary w-60"/>
@@ -47,12 +65,9 @@ export default function Weather(props){
     
       )
     }else{
-        //GET API KEY AND URL
-      const apiKey ="ab7ad46dea06f3628a7e54b90f1e4bb5";
-      
-      let apiUrl =`https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
-      axios.get(apiUrl).then(handleResponse);
+      search();
       return (
+        
         <p>loading...</p>
      );
     }
