@@ -33,7 +33,7 @@ form{
     padding: 1px 13px;
 
 }
-.weather-img{
+canvas{
     height: 60px;
     width: 60px;
     display: inline;
