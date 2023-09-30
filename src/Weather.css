@@ -46,6 +46,10 @@ canvas{
 .img-row{
     padding: 5px;
 }
+.img-component{
+    padding: 0;
+    margin: 0;
+}
 .col-3{
     padding: 0;
     margin: 3px;
