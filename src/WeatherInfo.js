@@ -11,10 +11,10 @@ export default function WeatherInfo(props){
             <li className="left-align">
               < FormattedDate data={props.data.date}/>
             </li>
-            <li className="left-align">{props.data.description}</li>
+            <li className="left-align weather-description">{props.data.description}</li>
         </ul>
         <div className="row mt-3">
-            <div className="col-5">
+            <div className="col-6">
               <div className="row img-row">
                 <div className="col-6 img-component" >
                   {/**Weather image component in line below*/}
@@ -30,7 +30,7 @@ export default function WeatherInfo(props){
                 
                
             </div>
-            <div className="col-7 weather-details">
+            <div className="col-6 weather-details">
                 <ul>
                     
                     <li>Humidity:{props.data.humidity}%</li>
