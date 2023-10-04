@@ -32,3 +32,30 @@ a{
 a:hover{
   color: azure;
 }
+@media only screen and (max-width:450px) and (min-width:200px){
+  footer{
+    padding-bottom: 260px;
+    font-size: 20px;
+    font-weight: bold;
+    color: beige;
+    font-style: oblique;
+   }
+}
+@media only screen and (max-width:950px) and (min-width:600px){
+  footer{
+    padding-bottom: 450px;
+    font-size: 20px;
+    font-weight: bold;
+    color: beige;
+    font-style: oblique;
+   }
+}
+@media only screen and (max-width:1500px) and (min-width:1000px){
+  footer{
+    padding-bottom: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    color: beige;
+    font-style: oblique;
+   }
+}

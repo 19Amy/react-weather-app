@@ -14,3 +14,33 @@
     color: black;
     font-weight: bold;
 }
+@media only screen and (max-width:450px) and (min-width:200px){
+    .WeatherForecast{
+        text-align: center;
+        margin-top: 30px;
+    }
+    .WeatherForecast-day{
+        color: black;
+        font-weight: bold;
+        font-size: 13px;
+    }
+    .WeatherForecast-temperature-max{
+        font-weight: bold;
+        color: black;
+        font-size: 13px;
+    }
+    .WeatherForecast-temperature-min{
+        opacity: 0.6;
+        color: black;
+        margin-left: 5px;
+        font-size: 13px;
+    }
+    .col{
+        margin: 10px 5px;
+    }
+}
+@media only screen and (max-width:1200px) and (min-width:450px){
+    .col{
+        margin: 10px 0px;
+    }
+}

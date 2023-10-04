@@ -51,19 +51,19 @@ export default function Weather(props){
         return(
      
        <div className=" container d-flex justify-content-center ">
-         <div className="Weather">
-         <form onSubmit={handleSubmit}>
-              <div className="row">
-                   <div className="col-md-9">
-                     <input type="search" placeholder="Enter a city" className="form-control" onChange={handleCityChange}/>
-                   </div>
-                   <div className="col-md-3">
-                      <input type="submit" value="Search" className="btn btn-primary w-60"/>
-                   </div>
-              </div> 
-          </form>
-          <WeatherInfo data={weatherData}/>
-          <WeatherForecast coordinates={weatherData.coordinates}/>
+           <div className="Weather">
+              <form onSubmit={handleSubmit}>
+                <div className="row form-row">
+                     <div className="col-8 .d-flex form-div">
+                       <input type="search" placeholder="Enter a city" className="form-control" onChange={handleCityChange}/>
+                     </div>
+                     <div className="col-4 button-div .d-flex">
+                        <input type="submit" value="Search" className="btn btn-primary w-60"/>
+                     </div>
+                </div> 
+            </form>
+            <WeatherInfo data={weatherData}/>
+            <WeatherForecast coordinates={weatherData.coordinates}/>
          </div>
           
        </div>

@@ -35,6 +35,7 @@ form{
     list-style: none;
     color: black;
 }
+
 .left-align{
     text-align: left;
     padding: 1px 13px;
@@ -91,4 +92,97 @@ canvas{
     padding-left: 20px;
     padding-right: 0;
     font-style: oblique;
+}
+
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width:450px) and (min-width:200px){
+    .form-row{
+        max-width: 450px;
+    }
+    .form-div{
+        padding: 0;
+       
+    }
+    .button-div{
+       padding: 0;
+    }
+    
+    .btn{
+       
+        margin-left: 0;
+    }
+    .Weather h1{
+        font-size: 18px;
+    }
+    .img-row{
+        padding: 0;
+    }
+    canvas{
+        height: 40px;
+        width: 40px;
+        display: inline;
+        margin: 0;
+        padding: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+        
+    }
+    .img-component{
+        padding: 0;
+        margin: 0;
+    }
+    .Weather .temperature{
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.671);
+        font-size: 30px;
+        font-weight: 400;
+        margin-left: 0px;
+        padding: 0;
+        
+    }
+    .units{
+        font-size: 13px;
+        font-weight: bold;
+        position: relative;
+        top: -20px;
+        text-align: right;
+        color: rgba(0, 0, 0, 0.671);
+    }
+    .weather-details{
+        text-align: left;
+        padding-left: 7px;
+        padding-right: 0;
+        font-style: oblique;
+    }
+    .wind-humidity{
+        text-align: left;
+        padding-left: 7px;
+        padding-right: 0;
+        font-style: oblique;
+        font-size: 13px;
+    }
+    
+}
+@media only screen and (max-width:950px) and (min-width:600px){
+    .container{
+        padding-top: 200px;
+    }
+    .Weather{
+        border: 1px solid rgba(128, 128, 128, 0.733);
+        color: grey;
+        padding: 40px;
+        margin: 30px 15px 50px 15px ;
+        border-radius: 4px;
+        max-width: 600px;
+        background-color: rgba(245, 245, 220, 0.281);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+        
+      }
+}
+@media only screen and (max-width:1500px) and (min-width:1000px){
+    .container{
+        padding-top: 50px;
+    }
 }
