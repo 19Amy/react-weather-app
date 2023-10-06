@@ -8,7 +8,7 @@ export default function WeatherInfo(props){
         <div className="WeatherInfo">
             <h1 className="left-align">{props.data.city}</h1>
         <ul>
-            <li className="left-align">
+            <li className="left-align date">
               < FormattedDate data={props.data.date}/>
             </li>
             <li className="left-align weather-description">{props.data.description}</li>

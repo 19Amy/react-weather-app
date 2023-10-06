@@ -115,6 +115,10 @@ canvas{
     .Weather h1{
         font-size: 18px;
     }
+    .date{
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.658);
+    }
     .img-row{
         padding: 0;
     }
@@ -160,7 +164,9 @@ canvas{
         padding-left: 7px;
         padding-right: 0;
         font-style: oblique;
-        font-size: 13px;
+        font-size: 10px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.863);
     }
     
 }
